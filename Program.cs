@@ -7,4 +7,4 @@ string secondFriend = "    Kutbuddin    ";
 
 Console.WriteLine($"My friends are {firstFriend} and {secondFriend.Trim()}"); // string interpolation
 
-//Console.WriteLine("My friends are " +  firstFriend + " and " + secondFriend); // concatenation
+// Console.WriteLine("My friends are " +  firstFriend + " and " + secondFriend); // concatenation
