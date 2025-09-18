@@ -35,7 +35,72 @@ Console.WriteLine(friends);
 //Console.WriteLine(c);
 
 // explicit conversion example
-int a = (int)42.1;
-int b = (int)38.2;
-long c = checked(a + b); // 80.30000000000001 changed to 80 because of explicit int conversion
-Console.WriteLine(c);
+//int a = (int)42.1;
+//int b = (int)38.2;
+//long c = checked(a + b); // 80.30000000000001 changed to 80 because of explicit int conversion
+//Console.WriteLine(c);
+
+/*
+ *  C# gives Multiplication and Division precedence over addition and subtraction
+ *  
+ *  In a way C# follows BODMAS rule
+ */
+// addition
+//Console.WriteLine("---Addition---");
+//int a = 10;
+//int b = 5;
+//int c = a + b;
+//Console.WriteLine($"a :- {a}");
+//Console.WriteLine($"b :- {b}");
+//Console.WriteLine($"result :- {c}");
+
+// subtraction
+//Console.WriteLine("---Subtraction---");
+//int a = 10;
+//int b = 5;
+//int c = a - b;
+//Console.WriteLine($"a :- {a}");
+//Console.WriteLine($"b :- {b}");
+//Console.WriteLine($"result :- {c}");
+
+// multiplication
+//Console.WriteLine("---Multiplication---");
+//int a = 10;
+//int b = 5;
+//int c = a * b;
+//Console.WriteLine($"a :- {a}");
+//Console.WriteLine($"b :- {b}");
+//Console.WriteLine($"result :- {c}");
+
+// Division (takes the quotient as answer)
+//Console.WriteLine("---Division---");
+//int a = 10;
+//int b = 5;
+//int c = a / b;
+//Console.WriteLine($"a :- {a}");
+//Console.WriteLine($"b :- {b}");
+//Console.WriteLine($"result :- {c}");
+
+
+// Modulus (takes the remainder as answer)
+//Console.WriteLine("---Modulus---");
+//int a = 10;
+//int b = 5;
+//int c = a % b;
+//Console.WriteLine($"a :- {a}");
+//Console.WriteLine($"b :- {b}");
+//Console.WriteLine($"result :- {c}");
+
+// Operator precedence example
+//int a = 5;
+//int b = 4;
+//int c = 2;
+////int d = a + b * c;
+//int d = (a + b) * c; // Parenthesis around the addition operation gives it precedence
+//Console.WriteLine($"Operator precedence example result :- {d}");
+
+
+// Maximum and minimum limits of C# integer
+int max = int.MaxValue;
+int min = int.MinValue;
+Console.WriteLine($"The range of integers is {min} and {max}");
