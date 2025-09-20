@@ -3,12 +3,12 @@
 // Strings are immutable in .NET
 Console.WriteLine("Hello Mohsin!");
 
-string firstFriend = "Adnan";
-firstFriend = firstFriend.Trim();
-string secondFriend = "Kutbuddin";
+//string firstFriend = "Adnan";
+//firstFriend = firstFriend.Trim();
+//string secondFriend = "Kutbuddin";
 
-string friends = $"My friends are {firstFriend} and {secondFriend.Trim()}"; // string interpolation
-Console.WriteLine(friends);
+//string friends = $"My friends are {firstFriend} and {secondFriend.Trim()}"; // string interpolation
+//Console.WriteLine(friends);
 //Console.WriteLine(friends.Contains("Kutbuddin"));
 //Console.WriteLine($"Length of friends string :- {friends.Length}");
 //Console.WriteLine(friends.StartsWith("My"));
@@ -101,6 +101,99 @@ Console.WriteLine(friends);
 
 
 // Maximum and minimum limits of C# integer
-int max = int.MaxValue;
-int min = int.MinValue;
-Console.WriteLine($"The range of integers is {min} and {max}");
+//int max = int.MaxValue;
+//int min = int.MinValue;
+//Console.WriteLine($"The range of integers is {min} and {max}");
+
+// branching
+
+// Basic
+//int a = 5;
+//int b = 2;
+//if (a + b > 10)
+//{
+//    Console.WriteLine("The answer is greater than 10");
+//}
+//else
+//{
+//    Console.WriteLine("The answer is not greater than 10");
+//}
+
+// Logical AND &&
+// == tests for equality
+
+//int a = 5;
+//int b = 5;
+//int c = 4;
+//if ((a + b + c > 10) && (a == b))
+//{
+//    Console.WriteLine("The answer is greater than 10");
+//    Console.WriteLine("The first number a is equal to second number b");
+//}
+//else
+//{
+//    Console.WriteLine("The answer is not greater than 10");
+//    Console.WriteLine("Or the first number is not equal to the second");
+//}
+
+
+// Logical OR ||
+
+//int a = 5;
+//int b = 2;
+//int c = 4;
+//if ((a + b + c > 10) || (a == b))
+//{
+//    Console.WriteLine("The answer is greater than 10");
+//    Console.WriteLine("The first number a is equal to second number b");
+//}
+//else
+//{
+//    Console.WriteLine("The answer is not greater than 10");
+//    Console.WriteLine("Or the first number is not equal to the second");
+//}
+
+
+// Loops
+
+// While loop
+//Console.WriteLine("while loop example");
+//int counter = 0;
+//while (counter < 10)
+//{
+//    Console.WriteLine($"Hello! The counter is {counter}");
+//    counter++;
+//}
+
+// do-while loop
+
+//Console.WriteLine("do-while loop example");
+//int counter = 0;
+//do
+//{
+//    Console.WriteLine($"Hello! The counter is {counter}");
+//    counter++;
+//} while (counter < 10);
+
+
+// for loop
+// for(for initializer; for condition; for iterator)
+// for(int i = 0; i < 10; i++)
+
+//Console.WriteLine("for loop example");
+//for (int i = 0; i < 10; i++)
+//{
+//    Console.WriteLine($"Hello! The counter is {i}");
+//}
+
+// exercise
+// sum of all integers from 1 to 20 that are divisible by 3
+int sum = 0;
+for (int i = 1; i <= 20; i++)
+{
+    if (i % 3 == 0)
+    {
+        sum += i;
+    }
+}
+Console.WriteLine($"The sum of all integers from 1 to 20 that are divisible by 3 is :- {sum}");
