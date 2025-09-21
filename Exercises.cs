@@ -21,5 +21,9 @@ namespace helloworld
             }
             Console.WriteLine($"The sum of all integers from 1 to 20 that are divisible by 3 is :- {sum}");
         }
+        public static int addTwoNumbers(int num1, int num2)
+        {
+            return num1 + num2;
+        }
     }
 }

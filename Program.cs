@@ -23,12 +23,9 @@ Console.WriteLine("Hello Mohsin!");
 // exercise
 // sum of all integers from 1 to 20 that are divisible by 3
 Exercises.Sumof1to20NumbersDivisibleBy3();
-//int sum = 0;
-//for (int i = 1; i <= 20; i++)
-//{
-//    if (i % 3 == 0)
-//    {
-//        sum += i;
-//    }
-//}
-//Console.WriteLine($"The sum of all integers from 1 to 20 that are divisible by 3 is :- {sum}");
+Console.WriteLine("Enter num1:- ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter num2 :- ");
+int num2 = Convert.ToInt32(Console.ReadLine());
+int result = Exercises.addTwoNumbers(num1, num2);
+Console.WriteLine($"Addition of {num1} and {num2} is {result}");
