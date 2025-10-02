@@ -12,13 +12,21 @@ namespace helloworld
         {
             // sum of all integers from 1 to 20 that are divisible by 3
             int sum = 0;
+            List<int> numbersDivisibleBy3 = [];
             for (int i = 1; i <= 20; i++)
             {
                 if (i % 3 == 0)
                 {
                     sum += i;
+                    numbersDivisibleBy3.Add(i);
                 }
             }
+            Console.Write($"Numbers divisble by 3 between 1 to 20 are as follows:- ");
+            foreach (var item in numbersDivisibleBy3)
+            {
+                Console.Write($"{item} ");
+            }
+            Console.WriteLine($"\nThe count of numbers divisible by 3 between 1 to 20 is {numbersDivisibleBy3.Count}");
             Console.WriteLine($"The sum of all integers from 1 to 20 that are divisible by 3 is :- {sum}");
         }
         public static int addTwoNumbers(int num1, int num2)
@@ -26,7 +34,7 @@ namespace helloworld
             return num1 + num2;
         }
 
-        public static void fibonacciSeriesTill20() 
+        public static List<int> fibonacciSeriesTill20() 
         {
             int num1 = 1;
             int num2 = 1;
@@ -42,10 +50,7 @@ namespace helloworld
                 num2 = result;
             }
 
-            foreach (var item in fibSeries)
-            {
-                Console.Write($"{item} ");
-            }
+            return fibSeries;
         }
     }
 }

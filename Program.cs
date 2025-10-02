@@ -22,9 +22,14 @@ using helloworld;
 
 // exercise
 // sum of all integers from 1 to 20 that are divisible by 3
-//Exercises.Sumof1to20NumbersDivisibleBy3();
+Exercises.Sumof1to20NumbersDivisibleBy3();
 
 // List
 //ListExercise.ListExercises();
 
-Exercises.fibonacciSeriesTill20();
+List<int> result = Exercises.fibonacciSeriesTill20();
+Console.Write("The fibonacci series till 20 is as follows :- ");
+foreach (var item in result)
+{
+    Console.Write($"{item}, ");
+}
