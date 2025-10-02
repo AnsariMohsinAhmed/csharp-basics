@@ -25,5 +25,27 @@ namespace helloworld
         {
             return num1 + num2;
         }
+
+        public static void fibonacciSeriesTill20() 
+        {
+            int num1 = 1;
+            int num2 = 1;
+            int result;
+
+            List<int> fibSeries = [num1, num2];
+
+            for (int i = 3; i <= 20; i++)
+            {
+                result = num1 + num2;
+                fibSeries.Add(result);
+                num1 = num2;
+                num2 = result;
+            }
+
+            foreach (var item in fibSeries)
+            {
+                Console.Write($"{item} ");
+            }
+        }
     }
 }

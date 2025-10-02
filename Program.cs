@@ -24,4 +24,7 @@ using helloworld;
 // sum of all integers from 1 to 20 that are divisible by 3
 //Exercises.Sumof1to20NumbersDivisibleBy3();
 
-ListExercise.ListExercises();
+// List
+//ListExercise.ListExercises();
+
+Exercises.fibonacciSeriesTill20();
