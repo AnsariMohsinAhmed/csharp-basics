@@ -36,6 +36,10 @@ namespace helloworld
                 where score > 50
                 select score;
 
+            // query method syntax of LINQ
+            //var scoreQuery2 = scoresArray.Where(score => score > 50).OrderByDescending(score => score);
+            //result = scoreQuery2.ToList();
+
             // query execution
             foreach (int item in scoreQuery)
             {
