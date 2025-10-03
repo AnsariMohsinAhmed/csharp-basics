@@ -30,7 +30,7 @@ namespace helloworld
         public static List<int> GetScoresGreaterThan50(int[] scoresArray)
         {
             List<int> result = new List<int>();
-            // query expression
+            // query expression / query syntax
             IEnumerable<int> scoreQuery =
                 from score in scoresArray
                 where score > 50
